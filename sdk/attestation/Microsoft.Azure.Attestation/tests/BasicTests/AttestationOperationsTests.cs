@@ -116,7 +116,7 @@ namespace Microsoft.Azure.Attestation.Tests.BasicTests
             {
                 var attestationClient = GetAttestationClient();
                 string tenantBaseUrl = "https://tradewinds.us.test.attest.azure.net";
-                var response = attestationClient.Certs.Get(tenantBaseUrl);
+                var response = attestationClient.SigningCertificates.Get(tenantBaseUrl);
 
                 var json = JsonConvert.DeserializeObject(response.ToString()) as JObject;
                 Assert.NotNull(json);
