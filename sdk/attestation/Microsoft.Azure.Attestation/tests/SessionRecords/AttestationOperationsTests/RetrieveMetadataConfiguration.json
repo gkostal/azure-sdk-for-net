@@ -7,13 +7,13 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "b81cdf0c-2e23-44bd-b015-cc017785da02"
+          "ba581960-984a-455f-8d4d-2ecd9b794534"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.28008.01",
+          "FxVersion/4.6.28325.01",
           "OSName/Windows",
           "OSVersion/Microsoft.Windows.10.0.18363.",
           "Microsoft.Azure.Attestation.AttestationClient/0.9.0.0"
@@ -21,7 +21,7 @@
       },
       "ResponseHeaders": {
         "Date": [
-          "Tue, 10 Dec 2019 23:03:23 GMT"
+          "Wed, 12 Feb 2020 22:55:03 GMT"
         ],
         "Server": [
           "Kestrel"

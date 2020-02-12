@@ -133,7 +133,7 @@ namespace Microsoft.Azure.Attestation.Tests.BasicTests
 
         }
 
-        public AttestationClient GetAttestationClient()
+        private AttestationClient GetAttestationClient()
         {
             return fixture.CreateAttestationClient();
         }
