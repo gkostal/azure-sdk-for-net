@@ -7,13 +7,13 @@
       "RequestBody": "\"eyJhbGciOiJub25lIn0.eyJBdHRlc3RhdGlvblBvbGljeSI6ICJ7XHJcbiAgICBcIiR2ZXJzaW9uXCI6IDEsXHJcbiAgICBcIiRhbGxvdy1kZWJ1Z2dhYmxlXCIgOiB0cnVlLFxyXG4gICAgXCIkY2xhaW1zXCI6W1xyXG4gICAgICAgIFwiaXMtZGVidWdnYWJsZVwiICxcclxuICAgICAgICBcInNneC1tcnNpZ25lclwiLFxyXG4gICAgICAgIFwic2d4LW1yZW5jbGF2ZVwiLFxyXG4gICAgICAgIFwicHJvZHVjdC1pZFwiLFxyXG4gICAgICAgIFwic3ZuXCIsXHJcbiAgICAgICAgXCJ0ZWVcIixcclxuICAgICAgICBcIk5vdERlYnVnZ2FibGVcIlxyXG4gICAgXSxcclxuICAgIFwiTm90RGVidWdnYWJsZVwiOiB7XCJ5ZXNcIjp7XCIkaXMtZGVidWdnYWJsZVwiOnRydWUsIFwiJG1hbmRhdG9yeVwiOnRydWUsIFwiJHZpc2libGVcIjpmYWxzZX19LFxyXG4gICAgXCJpcy1kZWJ1Z2dhYmxlXCIgOiBcIiRpcy1kZWJ1Z2dhYmxlXCIsXHJcbiAgICBcInNneC1tcnNpZ25lclwiIDogXCIkc2d4LW1yc2lnbmVyXCIsXHJcbiAgICBcInNneC1tcmVuY2xhdmVcIiA6IFwiJHNneC1tcmVuY2xhdmVcIixcclxuICAgIFwicHJvZHVjdC1pZFwiIDogXCIkcHJvZHVjdC1pZFwiLFxyXG4gICAgXCJzdm5cIiA6IFwiJHN2blwiLFxyXG4gICAgXCJ0ZWVcIiA6IFwiJHRlZVwiXHJcbn0ifQ.\"",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "240798f0-d477-46ec-8cf4-ec8a12ed268d"
+          "53cee94b-41d4-4871-a818-463a295d301c"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.28008.01",
+          "FxVersion/4.6.28325.01",
           "OSName/Windows",
           "OSVersion/Microsoft.Windows.10.0.18363.",
           "Microsoft.Azure.Attestation.AttestationClient/0.9.0.0"
@@ -27,7 +27,7 @@
       },
       "ResponseHeaders": {
         "Date": [
-          "Tue, 10 Dec 2019 23:03:23 GMT"
+          "Wed, 12 Feb 2020 22:55:05 GMT"
         ],
         "Server": [
           "Kestrel"
@@ -39,23 +39,23 @@
           "761"
         ]
       },
-      "ResponseBody": "\"eyJhbGciOiAiUlMyNTYiLCAiamt1IjogImh0dHBzOi8vdHJhZGV3aW5kcy51cy5hdHRlc3QuYXp1cmUubmV0L2NlcnRzIiwgImtpZCI6ICIrdXQyMDlCbHVIT0d4VUNON2dtVTRhU1hqZzFnQ3NyZ0JOZ1VuY0VDRm9vPSIsICJ0eXAiOiAiSldUIn0.eyJhYXMtcG9saWN5SGFzaCI6ICJ2MG9QNG9KWkVKWnh4SXhFNmJiVVAxa1JSbWVfZXgtUHV4NlF0c1U4STdNIiwgImV4cCI6IDE1NzYwMjI2MDQsICJpYXQiOiAxNTc2MDE5MDA0LCAiaXNzIjogImh0dHBzOi8vdHJhZGV3aW5kcy51cy5hdHRlc3QuYXp1cmUubmV0IiwgIm5iZiI6IDE1NzYwMTkwMDR9.dD5aPLJ0iUE8lQw1YC_YLMjN6lq0K3sAmyJm6T405Fm0t8PCAWL1GhrBT2e_fWf8V8iKtmgtDcKFLq-Ir8Jf3mGTrzjyaUGAmD9CBCnn700Ava77cUvZXsWMvnDPaJ2iBi5wyulrRmw13sw_bhCukTSNTKtjHGFFmeHOSHwfio3En3iV6xpCf5LbfZX2jyCYAVaWreFSb6AsM28yEpyodx77jWd0DnBCAkL8LngUFJunvspgrLY7XCQKE0ceQcoNvtHlfX7ARbN8ose8KStixqphDH6rtJj-_MbrfSm36b3c22ka7s9gdNftbDRNsZgrNoyigionqNWqdigO2Rj5Jg\"",
+      "ResponseBody": "\"eyJhbGciOiAiUlMyNTYiLCAiamt1IjogImh0dHBzOi8vdHJhZGV3aW5kcy51cy5hdHRlc3QuYXp1cmUubmV0L2NlcnRzIiwgImtpZCI6ICIrdXQyMDlCbHVIT0d4VUNON2dtVTRhU1hqZzFnQ3NyZ0JOZ1VuY0VDRm9vPSIsICJ0eXAiOiAiSldUIn0.eyJhYXMtcG9saWN5SGFzaCI6ICJ2MG9QNG9KWkVKWnh4SXhFNmJiVVAxa1JSbWVfZXgtUHV4NlF0c1U4STdNIiwgImV4cCI6IDE1ODE1NTE3MDYsICJpYXQiOiAxNTgxNTQ4MTA2LCAiaXNzIjogImh0dHBzOi8vdHJhZGV3aW5kcy51cy5hdHRlc3QuYXp1cmUubmV0IiwgIm5iZiI6IDE1ODE1NDgxMDZ9.MYtOwqbzfrEQAxDFBEhZ5IR_WM-MrbCUzCA3hkdgY51ZldXg8b_HUKnamz01BfD-yu7ImE8X0wpSoyOBRPZKQsffAuv51SHutwirPeM60uYOxeJzYxJfl1ZcbVZItBQNdVC0yrSaXbi7UUKOBv3t8xLm_F5bZfPVYqLH_cfefJq55nJWi6ZexCG7QcY0cQXSeL0W0XRERlRAuAcog8JBKYK5oLUK9hxfoAZRKLqzz8kRUPmRove9LecKQT3k95XbTt3eWNrpY6b79zKf1EB-LJidFQqm7FfTU9292EVOoE6U64xVdDtPacnIEAiFn6rZLpbUoubBKzodqEwL-3flwA\"",
       "StatusCode": 200
     },
     {
       "RequestUri": "/operations/policy/current?api-version=2018-09-01-preview&tee=SgxEnclave",
       "EncodedRequestUri": "L29wZXJhdGlvbnMvcG9saWN5L2N1cnJlbnQ/YXBpLXZlcnNpb249MjAxOC0wOS0wMS1wcmV2aWV3JnRlZT1TZ3hFbmNsYXZl",
       "RequestMethod": "PUT",
-      "RequestBody": "\"eyJhbGciOiAiUlMyNTYiLCAiamt1IjogImh0dHBzOi8vdHJhZGV3aW5kcy51cy5hdHRlc3QuYXp1cmUubmV0L2NlcnRzIiwgImtpZCI6ICIrdXQyMDlCbHVIT0d4VUNON2dtVTRhU1hqZzFnQ3NyZ0JOZ1VuY0VDRm9vPSIsICJ0eXAiOiAiSldUIn0.eyJhYXMtcG9saWN5SGFzaCI6ICJ2MG9QNG9KWkVKWnh4SXhFNmJiVVAxa1JSbWVfZXgtUHV4NlF0c1U4STdNIiwgImV4cCI6IDE1NzYwMjI2MDQsICJpYXQiOiAxNTc2MDE5MDA0LCAiaXNzIjogImh0dHBzOi8vdHJhZGV3aW5kcy51cy5hdHRlc3QuYXp1cmUubmV0IiwgIm5iZiI6IDE1NzYwMTkwMDR9.dD5aPLJ0iUE8lQw1YC_YLMjN6lq0K3sAmyJm6T405Fm0t8PCAWL1GhrBT2e_fWf8V8iKtmgtDcKFLq-Ir8Jf3mGTrzjyaUGAmD9CBCnn700Ava77cUvZXsWMvnDPaJ2iBi5wyulrRmw13sw_bhCukTSNTKtjHGFFmeHOSHwfio3En3iV6xpCf5LbfZX2jyCYAVaWreFSb6AsM28yEpyodx77jWd0DnBCAkL8LngUFJunvspgrLY7XCQKE0ceQcoNvtHlfX7ARbN8ose8KStixqphDH6rtJj-_MbrfSm36b3c22ka7s9gdNftbDRNsZgrNoyigionqNWqdigO2Rj5Jg\"",
+      "RequestBody": "\"eyJhbGciOiAiUlMyNTYiLCAiamt1IjogImh0dHBzOi8vdHJhZGV3aW5kcy51cy5hdHRlc3QuYXp1cmUubmV0L2NlcnRzIiwgImtpZCI6ICIrdXQyMDlCbHVIT0d4VUNON2dtVTRhU1hqZzFnQ3NyZ0JOZ1VuY0VDRm9vPSIsICJ0eXAiOiAiSldUIn0.eyJhYXMtcG9saWN5SGFzaCI6ICJ2MG9QNG9KWkVKWnh4SXhFNmJiVVAxa1JSbWVfZXgtUHV4NlF0c1U4STdNIiwgImV4cCI6IDE1ODE1NTE3MDYsICJpYXQiOiAxNTgxNTQ4MTA2LCAiaXNzIjogImh0dHBzOi8vdHJhZGV3aW5kcy51cy5hdHRlc3QuYXp1cmUubmV0IiwgIm5iZiI6IDE1ODE1NDgxMDZ9.MYtOwqbzfrEQAxDFBEhZ5IR_WM-MrbCUzCA3hkdgY51ZldXg8b_HUKnamz01BfD-yu7ImE8X0wpSoyOBRPZKQsffAuv51SHutwirPeM60uYOxeJzYxJfl1ZcbVZItBQNdVC0yrSaXbi7UUKOBv3t8xLm_F5bZfPVYqLH_cfefJq55nJWi6ZexCG7QcY0cQXSeL0W0XRERlRAuAcog8JBKYK5oLUK9hxfoAZRKLqzz8kRUPmRove9LecKQT3k95XbTt3eWNrpY6b79zKf1EB-LJidFQqm7FfTU9292EVOoE6U64xVdDtPacnIEAiFn6rZLpbUoubBKzodqEwL-3flwA\"",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "152e3bff-45a9-4f58-a8e7-ed2a83e55f33"
+          "da42a20a-60c4-4e74-b392-5c8ba8749b1e"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.28008.01",
+          "FxVersion/4.6.28325.01",
           "OSName/Windows",
           "OSVersion/Microsoft.Windows.10.0.18363.",
           "Microsoft.Azure.Attestation.AttestationClient/0.9.0.0"
@@ -69,7 +69,7 @@
       },
       "ResponseHeaders": {
         "Date": [
-          "Tue, 10 Dec 2019 23:03:24 GMT"
+          "Wed, 12 Feb 2020 22:55:06 GMT"
         ],
         "Server": [
           "Kestrel"
@@ -91,13 +91,13 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "dce2ad9a-5e00-4d05-9615-9f4b2fea83dc"
+          "3f6c16a7-f20c-469f-96bb-66207c5d75f9"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.28008.01",
+          "FxVersion/4.6.28325.01",
           "OSName/Windows",
           "OSVersion/Microsoft.Windows.10.0.18363.",
           "Microsoft.Azure.Attestation.AttestationClient/0.9.0.0"
@@ -105,7 +105,7 @@
       },
       "ResponseHeaders": {
         "Date": [
-          "Tue, 10 Dec 2019 23:03:25 GMT"
+          "Wed, 12 Feb 2020 22:55:07 GMT"
         ],
         "Server": [
           "Kestrel"
@@ -127,13 +127,13 @@
       "RequestBody": "\"eyJhbGciOiJub25lIn0..\"",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "da84f006-30ad-4e45-8ba7-36742aafcaa4"
+          "778d8c2c-c625-44a6-9f85-bba67f47a613"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.28008.01",
+          "FxVersion/4.6.28325.01",
           "OSName/Windows",
           "OSVersion/Microsoft.Windows.10.0.18363.",
           "Microsoft.Azure.Attestation.AttestationClient/0.9.0.0"
@@ -147,7 +147,7 @@
       },
       "ResponseHeaders": {
         "Date": [
-          "Tue, 10 Dec 2019 23:03:26 GMT"
+          "Wed, 12 Feb 2020 22:55:08 GMT"
         ],
         "Server": [
           "Kestrel"
