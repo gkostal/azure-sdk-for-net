@@ -15,11 +15,35 @@ namespace Microsoft.Azure.Attestation.Tests.BasicTests
     public class AttestationOperationsTests : IClassFixture<AttestationTestFixture> 
     {
         private AttestationTestFixture fixture;
+        private const string tenantBaseUrl = "https://tradewinds.us.attest.azure.net";
+        private const string tenantBaseUrlWithTrustedSigners = "https://tradewinds2.us.attest.azure.net";
 
         public AttestationOperationsTests(AttestationTestFixture fixture)
         {
             this.fixture = fixture;
         }
+
+        [Fact]
+        public void UpdatePolicyCertificates()
+        {
+            using (MockContext ctx = MockContext.Start(this.GetType()))
+            {
+                var attestationClient = GetAttestationClient();
+
+                // Test Get
+                var serviceCallResult = attestationClient.PolicyCertificates.GetWithHttpMessagesAsync(tenantBaseUrl);
+                Assert.Equal(HttpStatusCode.OK, serviceCallResult.Result.Response.StatusCode);
+
+                serviceCallResult = attestationClient.PolicyCertificates.GetWithHttpMessagesAsync(tenantBaseUrlWithTrustedSigners);
+                Assert.Equal(HttpStatusCode.OK, serviceCallResult.Result.Response.StatusCode);
+                // TODO: Parse JWT, extract "aas-policyCertificates" claim, extract "x5c" field, validate it parses as a certificate!
+
+                // TODO: Test Add
+
+                // TODO: Test Remove
+            }
+        }
+
         [Fact]
         public void UpdatePolicy()
         {
@@ -27,7 +51,6 @@ namespace Microsoft.Azure.Attestation.Tests.BasicTests
             {
                 var attestationClient = GetAttestationClient();
 
-                string tenantBaseUrl = "https://tradewinds.us.attest.azure.net";
                 string policyJws =
                     "eyJhbGciOiJub25lIn0.eyJBdHRlc3RhdGlvblBvbGljeSI6ICJ7XHJcbiAgICBcIiR2ZXJzaW9uXCI6IDEsXHJcbiAgICBcIiRhbGxvdy1kZWJ1Z2dhYmxlXCIgOiB0cnVlLFxyXG4gICAgXCIkY2xhaW1zXCI6W1xyXG4gICAgICAgIFwiaXMtZGVidWdnYWJsZVwiICxcclxuICAgICAgICBcInNneC1tcnNpZ25lclwiLFxyXG4gICAgICAgIFwic2d4LW1yZW5jbGF2ZVwiLFxyXG4gICAgICAgIFwicHJvZHVjdC1pZFwiLFxyXG4gICAgICAgIFwic3ZuXCIsXHJcbiAgICAgICAgXCJ0ZWVcIixcclxuICAgICAgICBcIk5vdERlYnVnZ2FibGVcIlxyXG4gICAgXSxcclxuICAgIFwiTm90RGVidWdnYWJsZVwiOiB7XCJ5ZXNcIjp7XCIkaXMtZGVidWdnYWJsZVwiOnRydWUsIFwiJG1hbmRhdG9yeVwiOnRydWUsIFwiJHZpc2libGVcIjpmYWxzZX19LFxyXG4gICAgXCJpcy1kZWJ1Z2dhYmxlXCIgOiBcIiRpcy1kZWJ1Z2dhYmxlXCIsXHJcbiAgICBcInNneC1tcnNpZ25lclwiIDogXCIkc2d4LW1yc2lnbmVyXCIsXHJcbiAgICBcInNneC1tcmVuY2xhdmVcIiA6IFwiJHNneC1tcmVuY2xhdmVcIixcclxuICAgIFwicHJvZHVjdC1pZFwiIDogXCIkcHJvZHVjdC1pZFwiLFxyXG4gICAgXCJzdm5cIiA6IFwiJHN2blwiLFxyXG4gICAgXCJ0ZWVcIiA6IFwiJHRlZVwiXHJcbn0ifQ.";
                 
@@ -60,7 +83,6 @@ namespace Microsoft.Azure.Attestation.Tests.BasicTests
             using (MockContext ctx = MockContext.Start(this.GetType()))
             {
                 var attestationClient = GetAttestationClient();
-                string tenantBaseUrl = "https://tradewinds.us.test.attest.azure.net";
                 var response = attestationClient.MetadataConfiguration.Get(tenantBaseUrl);
                 var json = JsonConvert.DeserializeObject(response.ToString()) as JObject;
                 Assert.NotNull(json);
@@ -115,7 +137,6 @@ namespace Microsoft.Azure.Attestation.Tests.BasicTests
             using (MockContext ctx = MockContext.Start(this.GetType()))
             {
                 var attestationClient = GetAttestationClient();
-                string tenantBaseUrl = "https://tradewinds.us.test.attest.azure.net";
                 var response = attestationClient.SigningCertificates.Get(tenantBaseUrl);
 
                 var json = JsonConvert.DeserializeObject(response.ToString()) as JObject;
