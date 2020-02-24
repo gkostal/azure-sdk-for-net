@@ -37,7 +37,7 @@ namespace Attestation.Tests.ScenarioTests
                 jwk.X5c = new List<string>() { System.Convert.ToBase64String(certificate.Export(X509ContentType.Cert)) };
                 jwks.Keys = new List<JSONWebKey>() { jwk };
 
-                var instanceParams = new AttestationServiceCreationParams { Location = "Test Region", Properties = new AttestationServiceCreationSpecificParams { PolicySigningCertificates = jwks } };
+                var instanceParams = new AttestationServiceCreationParams { Location = testBase.location, Properties = new AttestationServiceCreationSpecificParams { PolicySigningCertificates = jwks } };
                 try
                 {
                     var createdAttestation = testBase.client.AttestationProviders.Create(
